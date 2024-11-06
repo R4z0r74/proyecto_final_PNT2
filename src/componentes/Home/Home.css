@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #74ebd5, #ACB6E5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+.clima-detalle {
+  margin-top: 20px;
+}
+
+.clima-detalle h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #4a90e2;
+}
+
+.app {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 25rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #4a90e2;
+}
+
+.clima-busqueda {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.clima-busqueda input {
+  width: 70%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  margin-right: 10px;
+  outline: none;
+}
+
+.clima-busqueda button {
+  background-color: #4a90e2;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.clima-busqueda button:hover {
+  background-color: #357ab9;
+}

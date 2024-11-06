@@ -20,8 +20,6 @@ export const getForecastByCity = async(cityName) => {
         throw e;
     }
 
-    
-    
 }
 
 export const getWeatherByCity = async(cityName) => {
@@ -40,9 +38,8 @@ export const getWeatherByCity = async(cityName) => {
         })
         return response.data;
     } catch (e){
-        console.log("Error Forecast")
+        console.log("Error Weather")
         throw e;
     }
 
-   
 }

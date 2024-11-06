@@ -1,12 +1,6 @@
 import React from 'react'
-
-const capitalizarPrimeraLetra = (str) => {
-  return str
-      .toLowerCase()
-      .split(' ')
-      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(' ');
-};
+import './ClimaTarjeta.css'
+import { capitalizarPrimeraLetra } from '../../FuncionesGlobales.js';
 
 const ClimaTarjeta = ({ clima }) => {
     const {name,main,weather} = clima;

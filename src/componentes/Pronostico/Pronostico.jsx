@@ -1,4 +1,7 @@
 import React from 'react'
+import './Pronostico.css'
+import { capitalizarPrimeraLetra } from '../../FuncionesGlobales.js';
+
 
 const agruparPorDias = (lista) => {
   return lista.reduce((acumulador, entry) => {
@@ -9,14 +12,6 @@ const agruparPorDias = (lista) => {
       acumulador[fecha].push(entry);
       return acumulador;
   }, {});
-};
-
-const capitalizarPrimeraLetra = (str) => {
-  return str
-      .toLowerCase()
-      .split(' ')
-      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(' ');
 };
 
 const Pronostico = ({ pronostico }) => {
