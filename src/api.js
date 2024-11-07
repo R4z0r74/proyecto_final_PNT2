@@ -1,9 +1,9 @@
 import axios from 'axios'
 
 export const getForecastByCity = async(cityName) => {
+    const apiKey = import.meta.env.VITE_API_KEY;
+    const url = import.meta.env.VITE_URL_BASE;
 
-    const apiKey = "6ccf66b2986cc33810e6d5c56a7ff73e"
-    const url = "https://api.openweathermap.org/data/2.5/"
     try{
         const response = await axios.get(url + "forecast", {
             params: {
@@ -23,9 +23,8 @@ export const getForecastByCity = async(cityName) => {
 }
 
 export const getWeatherByCity = async(cityName) => {
-
-    const apiKey = "6ccf66b2986cc33810e6d5c56a7ff73e"
-    const url = "https://api.openweathermap.org/data/2.5/"
+    const apiKey = import.meta.env.VITE_API_KEY;
+    const url = import.meta.env.VITE_URL_BASE;
 
     try{
         const response = await axios.get(url + "weather", {
